@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Tecnologias</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: purple;
+            color: white;
+        }
+        .botao-mudar-cor, .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid purple;
+            background-color: transparent;
+            color: purple;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .botao-mudar-cor:hover, .back-button:hover {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+    <script>
+        function mudarCor() {
+            let cores = ['red', 'blue', 'green', 'purple', 'orange'];
+            let elementos = document.querySelectorAll('table th, table td');
+            elementos.forEach(el => {
+                el.style.color = cores[Math.floor(Math.random() * cores.length)];
+            });
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Tecnologia</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Linguagem de marcação utilizada para estruturar páginas web.</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Folhas de estilo utilizadas para definir a aparência de páginas web.</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Linguagem de programação usada para interatividade e dinamismo em sites.</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Linguagem de programação versátil, usada para desenvolvimento web, ciência de dados e mais.</td>
+        </tr>
+    </table>
+    <a href="inicio.html" class="back-button">Voltar à Página Inicial</a>
+</body>
+</html>

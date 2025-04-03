@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurama</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: purple;
+        }
+        .center img {
+            max-width: 100%;
+            border-radius: 10px;
+            display: none;
+        }
+        .back-button, .show-image-button {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid purple;
+            background-color: transparent;
+            color: purple;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-button:hover, .show-image-button:hover {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+    <script>
+        function showImage() {
+            document.getElementById('image').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="center">
+                <img id="image" src="./img/mari.png" alt="Imagem">
+            </div>
+            <h1>Créditos</h1>
+        </header>
+        <main>
+            <p> 
+                não esqueci de baixar a imgm pra conseguir ver... <br>
+                É nois chupa-cabra (: </p>
+        </main>
+        <button class="show-image-button" onclick="showImage()">Mostrar Imagem</button>
+        <a href="inicio.html" class="back-button"> Voltar à Página Inicial </a>
+    </div>
+</body>
+</html>

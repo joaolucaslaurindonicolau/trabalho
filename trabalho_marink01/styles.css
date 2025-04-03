@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: purple;
+}
+
+.center img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.back-button, .show-image-button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid purple;
+    background-color: transparent;
+    color: purple;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.back-button:hover, .show-image-button:hover {
+    background-color: purple;
+    color: white;
+}
